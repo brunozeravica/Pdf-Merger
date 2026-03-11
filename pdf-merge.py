@@ -20,6 +20,7 @@ def main():
 def merge_pdfs(input_paths, output_path):
     writer = PdfWriter()
 
+    merge_count = 0
     for path in input_paths:
 
         # Determine page range if given
@@ -48,6 +49,11 @@ def merge_pdfs(input_paths, output_path):
 
         print(f"Adding: {path}")
         writer.append(path, page_range)
+        merge_count += 1
+
+    if merge_count == 0:
+        print("No valid files were provided, not generating output")
+        return
 
     with open(output_path, "wb") as output_file:
         writer.write(output_file)
