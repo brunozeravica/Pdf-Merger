@@ -1,4 +1,4 @@
-# PDF-Fuse
+# pdf-merge
 
 A lightweight Python utility to merge multiple PDF files with precise, human-friendly page range control.
 
