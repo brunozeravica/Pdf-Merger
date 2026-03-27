@@ -63,15 +63,15 @@ def merge_pdfs(input_paths, output_path):
 
 def print_help():
     help_text = """
-PDF-MERGE | A precise PDF merging tool.
+pdf-merge | A precise PDF merging tool.
 
 Usage:
-  python pdf-fuse.py <file1:start-end> <file2:start-end> ...  <fileN:start-end> <output.pdf>
+  python pdf-merge.py <file1:start-end> <file2:start-end> ...  <fileN:start-end> <output.pdf>
 
 Examples:
-  Full Files:    python pdf-fuse.py input1.pdf input2.pdf output.pdf
-  Specific Pages: python pdf-fuse.py input1.pdf:1-3 input2.pdf:5-10 output.pdf
-  Mixed:         python pdf-fuse.py input1.pdf:1-2 input2.pdf output.pdf
+  Full Files:    python pdf-merge.py input1.pdf input2.pdf output.pdf
+  Specific Pages: python pdf-merge.py input1.pdf:1-3 input2.pdf:5-10 output.pdf
+  Mixed:         python pdf-merge.py input1.pdf:1-2 input2.pdf output.pdf
 
 Note: Page ranges are 1-indexed (human counting). 1-3 includes page 1, 2, and 3.
     """
