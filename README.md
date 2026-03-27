@@ -9,7 +9,7 @@ A lightweight Python utility to merge multiple PDF files with precise, human-fri
 Run the script from your terminal by passing the input files (with optional page ranges) followed by the desired output name.
 
 ```bash
-python pdf-fuse.py <file1:start-end> <file2:start-end> ...  <fileN:start-end> <output.pdf>
+python pdf-merge.py <file1:start-end> <file2:start-end> ...  <fileN:start-end> <output.pdf>
 ```
 
 ### Page Range Syntax
